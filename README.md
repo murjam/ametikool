@@ -1,0 +1,2 @@
+# ametikool
+Kuressaare Ametikooli Kursus
