@@ -14,6 +14,6 @@ function sumUpTo(n) {
     return sum;
 }
 
-console.time("Timer");
+console.time('Timer');
 console.log(sumUpTo(BigInt(100000000)));
-console.timeEnd("Timer");
+console.timeEnd('Timer');

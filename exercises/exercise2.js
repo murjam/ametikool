@@ -19,6 +19,6 @@ function printNumbersDivisibleBy(divisibleByNr, printCount) {
     }
 }
 
-console.time("Timer");
+console.time('Timer');
 printNumbersDivisibleBy(23456789, 100);
-console.timeEnd("Timer");
+console.timeEnd('Timer');

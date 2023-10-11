@@ -1,5 +1,5 @@
 /*
- * See skript arvutab failis "numbers.txt" olevate numbrite summa.
+ * See skript arvutab failis 'numbers.txt' olevate numbrite summa.
  * Aga teeb seda ebaefektiivselt: umbes paarkümmend millisekundit.
  *
  * ÜLESANNE: optimeeri koodi nii, et programmi käivitus võtaks aega umbes paar millisekundit.
@@ -11,12 +11,12 @@ function calculateSum(fileName) {
     for (i = 0; i < 1000; i++) {
         const fs = require('fs');
         const data = fs.readFileSync(fileName, 'utf8');
-        lines = data.split("\n");
+        lines = data.split('\n');
         sum += Number(lines[i]);
     }
     return sum;
 }
 
-console.time("Timer");
+console.time('Timer');
 console.log(calculateSum('numbers.txt'));
-console.timeEnd("Timer");
+console.timeEnd('Timer');
