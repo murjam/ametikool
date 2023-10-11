@@ -6,11 +6,11 @@
  */
 
 // TODO: Optimize this function
-function calculateSum() {
+function calculateSum(fileName) {
     let sum = 0;
     for (i = 0; i < 1000; i++) {
         const fs = require('fs');
-        const data = fs.readFileSync('numbers.txt', 'utf8');
+        const data = fs.readFileSync(fileName, 'utf8');
         lines = data.split("\n");
         sum += Number(lines[i]);
     }
@@ -18,5 +18,5 @@ function calculateSum() {
 }
 
 console.time("Timer");
-console.log(calculateSum());
+console.log(calculateSum('numbers.txt'));
 console.timeEnd("Timer");
