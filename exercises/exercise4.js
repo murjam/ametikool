@@ -15,5 +15,5 @@ function sumUpTo(n) {
 }
 
 console.time('Timer');
-console.log(sumUpTo(BigInt(100000000)));
+console.log(sumUpTo(BigInt(100_000_000)));
 console.timeEnd('Timer');

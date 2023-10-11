@@ -18,5 +18,7 @@ function calculateSum(fileName) {
 }
 
 console.time('Timer');
-console.log(calculateSum('numbers.txt'));
+const sum = calculateSum('numbers.txt');
 console.timeEnd('Timer');
+console.log(sum);
+console.assert(sum === 856204);
